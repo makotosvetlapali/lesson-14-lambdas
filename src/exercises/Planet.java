@@ -2,21 +2,23 @@ package exercises;
 
 public class Planet {
 
-	private int distanceFromSun; // Average distance in millions of kilometers
 	private String name;
-	private double volume; // Relative to Earth which is 1.0
-	private int satellites;
+	private double volume; 
+	private int satelitess;
+	private int distanceFromTheSun; 
+
 
 	public Planet(String name, int distanceFromSun, double volume, int satellites) {
 		super();
 		this.name = name;
-		this.distanceFromSun = distanceFromSun;
 		this.volume = volume;
-		this.satellites = satellites;
+		this.satelitess = satellites;
+		this.distanceFromTheSun = distanceFromTheSun;
+
 	}
 
-	public int getDistanceFromSun() {
-		return distanceFromSun;
+	public int getDistanceFromTheSun() {
+		return distanceFromTheSun;
 	}
 
 	public String getName() {
@@ -28,7 +30,7 @@ public class Planet {
 	}
 
 	public String toString() {
-		return "\n" + this.name + " - " + distanceFromSun + " million km far from the Sun; " + volume + " volume";
+		return "\n" + this.name + " - " + distanceFromTheSun + " millions of kilometers away from the Sun; " + volume + " volume";
 	}
 
 }
