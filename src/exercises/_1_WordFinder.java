@@ -13,13 +13,11 @@ public class _1_WordFinder {
 
 	public static void main(String[] args) {
 		/* Print all the words beginning with P that are over 10 characters. */
-		Stream<String> streamOfWords = loadWordList().stream();
+		Stream<String> strOfWrd = loadWordList().stream();
 
-		List<String> selectedWords = streamOfWords.filter(word -> word.length() > 10)
-				.filter(word -> word.charAt(0) == 'P').collect(Collectors.toList());
-		
-		
-		System.out.println(selectedWords);
+		List<String> slcWrd = strOfWrd.filter(word -> word.length() > 10)
+		.filter(word -> word.charAt(0) == 'P').collect(Collectors.toList());
+		System.out.println(slcWrd);
 
 	}
 
